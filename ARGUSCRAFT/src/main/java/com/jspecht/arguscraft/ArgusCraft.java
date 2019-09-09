@@ -3,8 +3,14 @@ package com.jspecht.arguscraft;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import com.jspecht.arguscraft.blocks.argus_pole;
+import com.jspecht.arguscraft.lists.BlockList;
 import com.jspecht.arguscraft.lists.ItemList;
 
+import net.minecraft.block.Block;
+import net.minecraft.item.*;
+import net.minecraft.block.SoundType;
+import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.util.ResourceLocation;
@@ -22,6 +28,8 @@ public class ArgusCraft {
 	public static ArgusCraft instance;
 	public static final String modid = "arguscraft";
 	private static final Logger logger = LogManager.getLogger(modid);
+	
+	public static final ItemGroup argus = new ArgusCraftItemGroup();
 	
 	public ArgusCraft() {
 		instance = this;
@@ -46,10 +54,25 @@ public class ArgusCraft {
 		public static void registerItems(final RegistryEvent.Register<Item> event) {
 			
 			event.getRegistry().registerAll(
-					ItemList.battery = new Item(new Item.Properties().group(ItemGroup.REDSTONE)).setRegistryName(location("battery"))
+					ItemList.battery = new Item(new Item.Properties().group(argus)).setRegistryName(location("battery")),
+					ItemList.circuit = new Item(new Item.Properties().group(argus)).setRegistryName(location("circuit")),
+					ItemList.antenna = new Item(new Item.Properties().group(argus)).setRegistryName(location("antenna")),
+					ItemList.solarpanel = new Item(new Item.Properties().group(argus)).setRegistryName(location("solarpanel")),
+					
+					ItemList.argus_pole = new BlockItem(BlockList.argus_pole, new Item.Properties().group(argus)).setRegistryName("argus_pole")
 			);
 			
 			logger.info("Items registered.");
+		}
+		
+		@SubscribeEvent
+		public static void registerBlocks(final RegistryEvent.Register<Block> event) {
+			
+			event.getRegistry().registerAll(
+					BlockList.argus_pole = new argus_pole(Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 3.0f).lightValue(0).sound(SoundType.SCAFFOLDING))
+			);
+			
+			logger.info("Blocks registered.");
 		}
 		
 		private static ResourceLocation location(String name) {

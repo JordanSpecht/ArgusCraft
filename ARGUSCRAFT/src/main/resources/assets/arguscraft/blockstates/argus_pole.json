@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "": [
+            { "model": "arguscraft:block/argus_pole" }
+        ]
+    }
+}

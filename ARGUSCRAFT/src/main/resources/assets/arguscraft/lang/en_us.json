@@ -1,3 +1,11 @@
 {
-	"item.arguscraft.battery": "Battery"
+	"item.arguscraft.battery": "Battery",
+	"item.arguscraft.antenna": "Antenna",
+	"item.arguscraft.circuit": "Circuit",
+	"item.arguscraft.solarpanel": "Solar Panel",
+	"item.arguscraft.argus_pole": "Argus Pole",
+	
+	"block.arguscraft.argus_pole": "Argus Pole",
+	
+	"itemGroup.argus": "Argus"
 }
