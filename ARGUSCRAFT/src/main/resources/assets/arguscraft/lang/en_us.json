@@ -3,9 +3,11 @@
 	"item.arguscraft.antenna": "Antenna",
 	"item.arguscraft.circuit": "Circuit",
 	"item.arguscraft.solarpanel": "Solar Panel",
-	"item.arguscraft.argus_pole": "Argus Pole",
+	"item.arguscraft.argus_pole": "ARGUS Pole",
+	"item.arguscraft.gateway": "ARGUS Gateway",
 	
-	"block.arguscraft.argus_pole": "Argus Pole",
+	"block.arguscraft.argus_pole": "ARGUS Pole",
+	"block.arguscraft.gateway": "ARGUS Gateway",
 	
-	"itemGroup.argus": "Argus"
+	"itemGroup.argus": "ARGUS"
 }

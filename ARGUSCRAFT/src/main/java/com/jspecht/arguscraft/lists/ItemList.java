@@ -11,4 +11,5 @@ public class ItemList {
 	
 	//Item blocks
 	public static Item argus_pole;
+	public static Item gateway;
 }
