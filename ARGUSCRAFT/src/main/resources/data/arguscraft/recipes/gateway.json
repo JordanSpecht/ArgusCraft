@@ -1,0 +1,26 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"AAA",
+		"CCC",
+		"IDI"
+	],
+	"key": {
+		"A": {
+			"item": "arguscraft:antenna"
+		},
+		"C": {
+			"item": "arguscraft:circuit"
+		},
+		"I": {
+			"item": "minecraft:iron_ingot"
+		},
+		"D": {
+			"item": "minecraft:diamond"
+		}
+	},
+	"result": {
+		"item": "arguscraft:gateway",
+		"count": 1
+	}
+}

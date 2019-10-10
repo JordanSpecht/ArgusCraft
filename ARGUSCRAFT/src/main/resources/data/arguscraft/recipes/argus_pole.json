@@ -1,0 +1,23 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"SAS",
+		"SCS",
+		"SAS"
+	],
+	"key": {
+		"A": {
+			"item": "arguscraft:antenna"
+		},
+		"C": {
+			"item": "arguscraft:circuit"
+		},
+		"S": {
+			"item": "minecraft:sugar_cane"
+		}
+	},
+	"result": {
+		"item": "arguscraft:argus_pole",
+		"count": 1
+	}
+}

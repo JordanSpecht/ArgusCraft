@@ -1,7 +1,19 @@
 {
-    "variants": {
-        "": [
-            { "model": "arguscraft:block/gateway" }
-        ]
-    }
+	"variants": {
+		"facing=north": {
+			"model": "arguscraft:block/gateway"
+		},
+		"facing=south": {
+			"model": "arguscraft:block/gateway",
+			"y": 180
+		},
+		"facing=west": {
+			"model": "arguscraft:block/gateway",
+			"y": 270
+		},
+		"facing=east": {
+			"model": "arguscraft:block/gateway",
+			"y": 90
+		}
+	}
 }

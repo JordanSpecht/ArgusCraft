@@ -63,7 +63,7 @@ public class ArgusCraft {
 					ItemList.battery = new Item(new Item.Properties().group(argus)).setRegistryName(location("battery")),
 					ItemList.circuit = new Item(new Item.Properties().group(argus)).setRegistryName(location("circuit")),
 					ItemList.antenna = new Item(new Item.Properties().group(argus)).setRegistryName(location("antenna")),
-					ItemList.solarpanel = new Item(new Item.Properties().group(argus)).setRegistryName(location("solarpanel")),
+					//ItemList.solarpanel = new Item(new Item.Properties().group(argus)).setRegistryName(location("solarpanel")),
 					
 					//Block Items
 					ItemList.argus_pole = new BlockItem(BlockList.argus_pole, new Item.Properties().group(argus)).setRegistryName("argus_pole"),
